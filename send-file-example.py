@@ -16,8 +16,9 @@ def file_downloads():
 @app.route('/file')
 def return_files():
     return send_file(
-        'flask-wtf_pcap.pcapng',
-        attachment_filename='flask-wtf_pcap.pcapng',
+        'test.csv',
+        mimetype='text/csv',
+        attachment_filename='test.csv',
         as_attachment=True
     )
 
