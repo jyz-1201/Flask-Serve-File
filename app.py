@@ -16,9 +16,9 @@ def file_downloads():
 @app.route('/file')
 def return_files():
     return send_file(
-        'test.csv',
-        mimetype='text/csv',
-        attachment_filename='test.csv',
+        'music.mp3',
+        mimetype='audio/mp3',
+        attachment_filename='music.mp3',
         as_attachment=True
     )
 
